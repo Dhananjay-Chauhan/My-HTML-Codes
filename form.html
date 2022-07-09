@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+</head>
+
+<body>
+    <div>
+        <form action="form.cpp">
+            <input type="text" placeholder="Enter your Name"><br><br>
+            <input type="button" value="Push it"><br><br>
+            <input type="range" min="0" max="10"><br><br>
+            <input type="tel" placeholder="Enter Telephone number"><br><br>
+            <p>Time : <input type="time"><br><br></p>
+            <input type="datetime-local"><br><br>
+            <!--  These are two different buttons -->
+            <input type="radio" value="e" name="Dec">Hello!
+            <input type="radio" value="Y" name="D">Hola!
+            <br><br><br><br>
+            <label for="Gradeid">
+                <!-- These are two buttons that comes under a common category. -->
+                <!-- name will be used by the backend to find the value and use it.  -->
+                <!-- id is like a roll no. and class is like a school house. -->
+                <!-- for image displayed in full window use height = 1184 px -->
+                <p>Select Grade : </p>
+                A<input type="radio" value="A" name="Grade" id="Gradeid"><br><br>
+                B<input type="radio" value="B" name="Grade" id="Gradeid"><br><br>
+                E-Mail : <input type="email" name="E-Mail" id="Gradeid"><br><br>
+                Password : <input type="password" name="Password" id="Gradeid"><br><br>
+                File : <input type="file" name="File" id="Gradeid"><br><br>
+                Color : <input type="color" name="Color" id="Gradeid"><br><br>
+            </label>
+            <label for="checkit">
+                <!-- on using label (for) with checkbox , the checkbox will show the tick even when the text is clicked otherwise the box has to be clicked specifically .-->
+                Checkbox : <input type="checkbox" name="check" id="checkit" class="red"><br><br>
+                <textarea name="check" id="checkit" cols="40" rows="10" placeholder="Hola! Amigoes how are you ?"></textarea><br><br>
+            </label>
+            <select name="company" id="companyid">
+                <option value="Select">Select</option>
+                <option value="Google">Google</option>
+                <option value="Meta">Meta</option>
+                <option value="Amazon">Amazon</option>
+                <option value="Netflix">Netflix</option>
+                <option value="Microsoft">Microsoft</option>
+            </select>
+            <br><br>
+            Image : <input type="image" src="Images/nightmoon.jpeg" height="1184px"
+                    alt="Image Loading in a Moment!"><br><br>
+
+        </form>
+    </div>
+</body>
+
+</html>
